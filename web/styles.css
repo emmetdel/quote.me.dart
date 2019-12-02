@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+
+:root {
+  --font-size: 5rem;
+  --padding-size: 20px;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffd194, #70e1f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #main-bg-image {
+  background: url("./images/bg-img-small.jpg") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#main {
+  width: 60%;
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+#title {
+  font-size: var(--font-size);
+  margin-bottom: var(--padding-size * 0.8);
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+#quote {
+  font-size: calc(var(--font-size) * 0.5);
+  margin-bottom: calc(var(--padding-size) * 0.6);
+  font-weight: 400;
+  word-spacing: -3px;
+  font-style: italic;
+  color: rgb(80, 80, 80);
+}
+/* #quote::before,
+#quote::after {
+  content: '"';
+} */
+
+#author {
+  font-size: calc(var(--font-size) * 0.3);
+  margin-bottom: calc(var(--padding-size) * 0.3);
+  font-weight: 200;
+  color: rgb(114, 114, 114);
+}
+
+#refresh-button {
+  border: 1.8px solid rgb(114, 114, 114);
+  background-color: transparent;
+  color: #fff;
+  border-radius: 3.5px;
+  font-size: calc(var(--font-size) * 0.3);
+  padding: 5px 12.5px;
+  font-family: inherit;
+  font-weight: 100;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 5px 11px 1px rgba(255, 255, 255, 0.3);
+}
+
+#refresh-icon {
+  width: calc(var(--font-size) * 0.3);
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  :root {
+    --font-size: 3rem;
+    --padding-size: 10px;
+  }
+
+  #main {
+    width: 80%;
+    max-width: 80%;
+  }
+}
